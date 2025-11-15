@@ -1,13 +1,11 @@
 import './App.css'
-import Title from "./Title.jsx"
-import Description from "./Description.jsx"
+import ProductTab from './ProductTab.jsx'
 
 function App() {
   return (
-    
+    //react fragment to avoid unnecessary divs
     <>
-    <Title />
-    <Description />
+    <ProductTab/>
     </>
   )
 }
