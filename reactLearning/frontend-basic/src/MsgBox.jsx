@@ -1,10 +1,7 @@
 function MsgBox({userName, color})
 {
-    let styles={color:color};
     return (
-        <div style={styles}>
-        <h1>{userName}</h1>
-        </div>
+        <h1 style={{color:color}}>{userName}</h1>
     )
 }
 
