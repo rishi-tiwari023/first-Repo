@@ -4,8 +4,10 @@ import ProductTab from './ProductTab.jsx'
 
 function App() {
   return (
-    //react fragment to avoid unnecessary divs
-    <MsgBox userName="Rishi Tiwari" color="red" />
+    <>
+    <h1>Blockbuster Deals | Shop Now</h1>
+    <ProductTab />
+    </>
   )
 }
 
