@@ -1,10 +1,11 @@
-import './App.css'
+import './App.css';
+import Product from "./Product.jsx";
 
 function App() {
 
   return (
     <>
-      <h1>Basic React App</h1>
+      <Product title="Mobile Phone" price="24,999" />
     </>
   )
 }
