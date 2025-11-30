@@ -1,11 +1,12 @@
-export default function Product({title,price,features,features2}) 
+export default function Product({title,price,features,list,features2}) 
 {
     return (
         <>
         <h4>{title}</h4>
         <p>Price : {price}</p>
-        <p>{features}</p>
-        <p>{features2.c}</p>
+        <p>----Preformatted---{features}</p>
+        <p>---Using Maps---{list}</p>
+        <p>---Specefic Item of an object--- &nbsp;{features2.c}</p>
         </>
     )
 }
