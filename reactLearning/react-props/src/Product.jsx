@@ -1,12 +1,24 @@
-export default function Product({title,price,features,list,features2}) 
+import "./Product.css";
+export default function Product({title,price}) 
 {
-    return (
-        <>
+    if(price>5000)
+    {
+        return (
+        <div className="Product">
         <h4>{title}</h4>
         <p>Price : {price}</p>
-        <p>----Preformatted---{features}</p>
-        <p>---Using Maps---{list}</p>
-        <p>---Specefic Item of an object--- &nbsp;{features2.c}</p>
-        </>
-    )
+        <p>Discount of 5% is Applied.</p>
+        </div>
+        )
+    }
+    else
+    {
+        return (
+        <div className="Product">
+        <h4>{title}</h4>
+        <p>Price : {price}</p>
+        <p> No Discount is Applied.</p>
+        </div>
+        )
+    }
 }
