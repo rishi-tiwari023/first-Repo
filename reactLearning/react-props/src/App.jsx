@@ -1,11 +1,11 @@
 import './App.css';
-import Product from "./Product.jsx";
+import ProductTab from "./ProductTab.jsx";
 
 function App() {
 
   return (
     <>
-      <Product title="Mobile Phone" price="24,999" />
+      <ProductTab />
     </>
   )
 }
